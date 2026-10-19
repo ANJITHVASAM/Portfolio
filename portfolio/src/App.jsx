@@ -39,6 +39,10 @@ const projects = [
   },
 ];
 
+function SectionLabel({ children }) {
+  return <p className="section-label">{children}</p>;
+}
+
 function App() {
 
   const [lightMode, setLightMode] = React.useState(false);
@@ -192,6 +196,50 @@ function App() {
             <a className="scroll-hint" href="#about">
               SCROLL TO EXPLORE ↓
             </a>
+          </section>
+          <section className="section container" id="about">
+            <SectionLabel>01 / ABOUT ME</SectionLabel>
+
+            <div className="about-grid">
+              <h2>
+                Curious by nature.
+                <br />
+                <span>Developer by choice.</span>
+              </h2>
+
+              <div className="about-copy">
+                <p>
+                  I’m a Computer Science and Engineering graduate who enjoys
+                  solving practical problems through code. My focus is building
+                  clear, reliable web experiences and strengthening my skills
+                  across frontend and backend development.
+                </p>
+
+                <p>
+                  During my internship at Besant Technologies, I worked on backend
+                  modules and CRUD operations with relational databases. I’m eager
+                  to keep learning and contribute to a collaborative development
+                  team.
+                </p>
+
+                <div className="quick-facts">
+                  <div>
+                    <strong>2025</strong>
+                    <span>B.Tech graduate</span>
+                  </div>
+
+                  <div>
+                    <strong>Java</strong>
+                    <span>Core strength</span>
+                  </div>
+
+                  <div>
+                    <strong>Full Stack</strong>
+                    <span>Learning by building</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </section>
         </main>
       </div>
