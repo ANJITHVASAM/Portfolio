@@ -339,3 +339,62 @@ h1 span,
   font-size: 10px;
   color: var(--muted);
 }
+.tinted-section {
+  background: linear-gradient(
+    180deg,
+    rgba(20, 28, 50, 0.66),
+    rgba(15, 21, 38, 0.72)
+  );
+  border-top: 1px solid rgba(166, 181, 220, 0.06);
+  border-bottom: 1px solid rgba(166, 181, 220, 0.06);
+}
+.section-heading {
+  margin-bottom: 34px;
+}
+.section-heading p {
+  margin: 10px 0 0;
+}
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.skill-card {
+  padding: 24px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  transition:
+    transform 0.2s,
+    border-color 0.2s;
+}
+.skill-card:hover,
+.project-card:hover {
+  border-color: #00bfff;
+}
+.skill-icon {
+  height: 43px;
+  width: 43px;
+  border-radius: 12px;
+  background: rgba(155, 140, 255, 0.13);
+  color: var(--accent);
+  display: grid;
+  place-items: center;
+}
+.skill-card h3 {
+  font-size: 15px;
+  margin: 20px 0 15px;
+}
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+.tag {
+  font-size: 10px;
+  color: #b7c0d9;
+  background: rgba(142, 155, 189, 0.09);
+  border: 1px solid rgba(142, 155, 189, 0.12);
+  padding: 7px 9px;
+  border-radius: 6px;
+}

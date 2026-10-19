@@ -241,6 +241,39 @@ function App() {
               </div>
             </div>
           </section>
+          <section className="section tinted-section" id="skills">
+            <div className="container">
+              <SectionLabel>02 / TOOLKIT</SectionLabel>
+
+              <div className="section-heading">
+                <h2>Skills I work with</h2>
+                <p>Technologies from my current developer toolkit.</p>
+              </div>
+
+              <div className="skills-grid">
+                {skills.map(function (skill) {
+                  return (
+                    <article className="skill-card" key={skill.title}>
+                      <div className="skill-icon">{skill.icon}</div>
+
+                      <h3>{skill.title}</h3>
+
+                      <div className="tags">
+                        {skill.items.map(function (item) {
+                          return (
+                            <span className="tag" key={item}>
+                              {item}
+                            </span>
+                          );
+                        })}
+                      </div>
+                    </article>
+                  );
+                })}
+              </div>
+            </div>
+          </section>
+          
         </main>
       </div>
     </>
