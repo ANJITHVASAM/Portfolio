@@ -98,6 +98,102 @@ function App() {
             </div>
           </nav>
         </header>
+        <main>
+          <section id="home" className="hero container">
+            <div className="hero-copy">
+              <div className="availability">
+                <span className="green-dot" />
+                OPEN TO ENTRY-LEVEL OPPORTUNITIES
+              </div>
+
+              <h1>
+                Hi, I’m Anjith.
+                <br />
+                <span>I build for the web.</span>
+              </h1>
+
+              <h2 className="hero-role">Java &amp; Full-Stack Developer</h2>
+
+              <p className="hero-description">
+                I enjoy turning ideas into useful web applications with Java,
+                Spring Boot, React, and databases.
+              </p>
+
+              <div className="hero-actions">
+                <a className="button primary-button" href="#projects">
+                  Explore my work ↗
+                </a>
+
+                <a className="button outline-button" href="#contact">
+                  Let’s connect
+                </a>
+              </div>
+
+              <div className="social-links">
+                <a
+                  href="https://github.com/ANJITHVASAM"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  ◈ GitHub
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/anjith-vasam-3b1b57335"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  in LinkedIn
+                </a>
+
+                <a href="mailto:anjivasam000@gmail.com">✉ Email</a>
+              </div>
+            </div>
+
+            <div className="hero-art">
+
+              <div className="code-card">
+                <div className="code-body">
+                  <p>
+                    <span className="line-number">01</span>{" "}
+                    <span className="purple">class</span>{" "}
+                    <span className="blue">Developer</span> {"{"}
+                  </p>
+
+                  <p>
+                    <span className="line-number">02</span>
+                    &nbsp; String name = <span className="green">"Anjith"</span>;
+                  </p>
+
+                  <p>
+                    <span className="line-number">03</span>
+                    &nbsp; String focus ={" "}
+                    <span className="green">"Full Stack"</span>;
+                  </p>
+
+                  <p>
+                    <span className="line-number">04</span>
+                    &nbsp; String mindset ={" "}
+                    <span className="green">"Keep learning"</span>;
+                  </p>
+
+                  <p>
+                    <span className="line-number">05</span> {"}"}
+                  </p>
+
+                  <div className="code-status">
+                    <span className="green-dot" />
+                    Ready to build something useful
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <a className="scroll-hint" href="#about">
+              SCROLL TO EXPLORE ↓
+            </a>
+          </section>
+        </main>
       </div>
     </>
   )
