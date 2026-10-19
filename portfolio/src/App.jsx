@@ -481,6 +481,21 @@ function App() {
               </div>
             </div>
           </section>
+          <footer className="footer container">
+            <a className="brand" href="#home">
+              <span className="brand-mark">A</span>
+
+              <span>
+                ANJITH<span className="brand-dot">.</span>
+              </span>
+            </a>
+
+            <span>Designed and built with curiosity.</span>
+
+            <a className="back-top" href="#home">
+              BACK TO TOP ↑
+            </a>
+          </footer>
         </main>
       </div>
     </>

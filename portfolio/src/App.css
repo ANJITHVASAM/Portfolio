@@ -597,3 +597,74 @@ h1 span,
   color: var(--muted);
   letter-spacing: 0.08em;
 }
+.contact-section {
+  padding-bottom: 90px;
+}
+.contact-panel {
+  padding: 42px;
+  border: 1px solid rgba(155, 140, 255, 0.25);
+  border-radius: 18px;
+  background:
+    radial-gradient(
+      ellipse at 10% 0%,
+      rgba(155, 140, 255, 0.13),
+      transparent 45%
+    ),
+    var(--panel);
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+  gap: 45px;
+  align-items: center;
+}
+.contact-panel .availability {
+  font-size: 9px;
+}
+.contact-panel h2 {
+  margin-top: 20px;
+}
+.contact-copy {
+  max-width: 390px;
+}
+.contact-options {
+  display: grid;
+  gap: 10px;
+}
+.contact-options > a {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  color: var(--green);
+}
+.contact-options > a > span {
+  display: grid;
+  gap: 5px;
+  flex: 1;
+  color: var(--text);
+  font-size: 11px;
+}
+.contact-options small {
+  font:
+    9px "DM Mono",
+    monospace;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+}
+.footer {
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 10px;
+}
+.back-top {
+  font:
+    9px "DM Mono",
+    monospace;
+  color: var(--green);
+  letter-spacing: 0.08em;
+}
