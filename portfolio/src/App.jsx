@@ -418,6 +418,69 @@ function App() {
               </div>
             </div>
           </section>
+          <section className="section container contact-section" id="contact">
+            <SectionLabel>05 / CONTACT</SectionLabel>
+
+            <div className="contact-panel">
+              <div>
+                <p className="availability">HAVE A ROLE OR PROJECT IN MIND?</p>
+
+                <h2>
+                  Let’s build something
+                  <br />
+                  <span>meaningful together.</span>
+                </h2>
+
+                <p className="contact-copy">
+                  I’m looking for opportunities to learn, contribute, and grow as
+                  a developer.
+                </p>
+              </div>
+
+              <div className="contact-options">
+                <a href="mailto:anjivasam000@gmail.com">
+                  <span>✉</span>
+
+                  <span>
+                    <small>EMAIL ME</small>
+                    anjivasam000@gmail.com
+                  </span>
+
+                  <span>↗</span>
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/anjith-vasam-3b1b57335"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span>in</span>
+
+                  <span>
+                    <small>CONNECT ON LINKEDIN</small>
+                    View my profile
+                  </span>
+
+                  <span>↗</span>
+                </a>
+
+                <a
+                  href="https://github.com/ANJITHVASAM"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span>◈</span>
+
+                  <span>
+                    <small>EXPLORE MY CODE</small>
+                    github.com/ANJITHVASAM
+                  </span>
+
+                  <span>↗</span>
+                </a>
+              </div>
+            </div>
+          </section>
         </main>
       </div>
     </>
