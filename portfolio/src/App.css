@@ -668,3 +668,51 @@ h1 span,
   color: var(--green);
   letter-spacing: 0.08em;
 }
+.light {
+  --bg: #f6f7fc;
+  --panel: #fff;
+  --text: #161a2b;
+  --muted: #59627a;
+  --line: rgba(50, 60, 100, 0.15);
+  background: var(--bg);
+  color: var(--text);
+}
+.light .header {
+  background: rgba(246, 247, 252, 0.9);
+}
+.light .code-card {
+  background: #151c31;
+}
+.light .code-body {
+  color: #dbe1f5;
+}
+.light .floating-badge {
+  background: #fff;
+  color: #20243a;
+  box-shadow: 0 12px 32px rgba(20, 30, 70, 0.12);
+}
+.light .tinted-section {
+  background: #eef0f9;
+}
+.light .tag {
+  color: #4f5974;
+  background: #f1f2f8;
+}
+.light .project-visual {
+  background: linear-gradient(135deg, #e3e4ff, #d8f5fa);
+}
+.light .mock-window {
+  background: #171d31;
+}
+.light .contact-panel {
+  background:
+    radial-gradient(
+      ellipse at 10% 0%,
+      rgba(155, 140, 255, 0.13),
+      transparent 45%
+    ),
+    #fff;
+}
+.light .nav-links {
+  color: #59627a;
+}
