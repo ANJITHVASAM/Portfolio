@@ -273,7 +273,75 @@ function App() {
               </div>
             </div>
           </section>
-          
+          <section className="section container" id="projects">
+            <SectionLabel>03 / SELECTED WORK</SectionLabel>
+
+            <div className="section-heading projects-heading">
+              <div>
+                <h2>Projects with purpose.</h2>
+                <p>A couple of projects from my development journey.</p>
+              </div>
+
+              <span className="project-count">02 PROJECTS</span>
+            </div>
+
+            <div className="projects-grid">
+              {projects.map(function (project) {
+                return (
+                  <article className="project-card" key={project.number}>
+                    <div className="project-top">
+                      <span>{project.number} / PROJECT</span>
+
+                      <a href={project.repo} target="_blank" rel="noreferrer">
+                        ↗
+                      </a>
+                    </div>
+
+                    <div className="project-visual">
+
+                    </div>
+
+                    <h3>{project.title}</h3>
+
+                    <p>{project.description}</p>
+
+                    <div className="tags">
+                      {project.tags.map(function (tag) {
+                        return (
+                          <span className="tag" key={tag}>
+                            {tag}
+                          </span>
+                        );
+                      })}
+                    </div>
+
+                    {project.link ? <a
+                      className="text-link"
+                      href={project.link}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      View Website ↗
+                    </a> : ""}
+                    <br />
+                    <a
+                      className="text-link"
+                      href={project.repo}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      View GitHub profile ↗
+                    </a>
+                  </article>
+                );
+              })}
+            </div>
+
+            <p className="small-note">
+              Update each project’s GitHub link to its specific repository and add
+              a live demo when available.
+            </p>
+          </section>
         </main>
       </div>
     </>
