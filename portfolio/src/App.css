@@ -800,3 +800,39 @@ h1 span,
     width: 100%;
   }
 }
+@media (max-width: 420px) {
+  h1 {
+    font-size: 44px;
+  }
+  .hero-actions {
+    flex-wrap: wrap;
+  }
+  .social-links {
+    gap: 14px;
+  }
+  .social-links a {
+    font-size: 10px;
+  }
+  .quick-facts {
+    gap: 18px;
+  }
+  .quick-facts strong {
+    font-size: 14px;
+  }
+  .contact-panel {
+    padding: 21px;
+  }
+  .contact-options > a {
+    padding: 11px;
+  }
+  .code-body {
+    font-size: 9px;
+    padding: 20px 13px;
+  }
+  .hero-art {
+    min-height: 320px;
+  }
+  .cert-list span {
+    flex-direction: column;
+  }
+}
