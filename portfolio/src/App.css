@@ -716,3 +716,87 @@ h1 span,
 .light .nav-links {
   color: #59627a;
 }
+@media (max-width: 800px) {
+  .container {
+    width: min(100% - 34px, 600px);
+  }
+  .nav {
+    height: 66px;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 66px;
+    left: 0;
+    right: 0;
+    padding: 20px 24px 24px;
+    background: var(--panel);
+    border-bottom: 1px solid var(--line);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .nav-links.open {
+    display: flex;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+    padding-top: 70px;
+    min-height: auto;
+    padding-bottom: 90px;
+  }
+  .hero-art {
+    min-height: 350px;
+    margin-top: 25px;
+  }
+  .code-card {
+    width: min(420px, 94%);
+  }
+  .badge-java {
+    right: 0;
+  }
+  .badge-react {
+    left: 0;
+  }
+  .scroll-hint {
+    bottom: 25px;
+  }
+  .section {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  .project-card > p {
+    min-height: 0;
+  }
+  .contact-panel {
+    grid-template-columns: 1fr;
+    padding: 27px;
+    gap: 22px;
+  }
+  .certifications {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .footer {
+    gap: 14px;
+    flex-wrap: wrap;
+    padding: 24px 0;
+  }
+  .footer > span {
+    order: 3;
+    width: 100%;
+  }
+}
