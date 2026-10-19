@@ -342,6 +342,82 @@ function App() {
               a live demo when available.
             </p>
           </section>
+          <section className="section tinted-section" id="journey">
+            <div className="container">
+              <SectionLabel>04 / MY JOURNEY</SectionLabel>
+
+              <div className="section-heading">
+                <h2>Learning, building, improving.</h2>
+                <p>Education and experience that helped shape my foundation.</p>
+              </div>
+
+              <div className="timeline">
+                <article className="timeline-item">
+                  <span className="timeline-dot" />
+
+                  <span className="timeline-date">JUL 2025 — SEP 2025</span>
+
+                  <h3>Internship — Besant Technologies</h3>
+
+                  <p>
+                    Developed backend modules for CRUD operations and gained
+                    practical experience with relational database connectivity,
+                    query optimization, and backend workflows.
+                  </p>
+                </article>
+
+                <article className="timeline-item">
+                  <span className="timeline-dot" />
+
+                  <span className="timeline-date">2022 — 2025</span>
+
+                  <h3>B.Tech, Computer Science and Engineering</h3>
+
+                  <p>
+                    University College of Engineering, Kothagudem{" "}
+                    <span className="result-badge">CGPA 7.71 / 10</span>
+                  </p>
+                </article>
+
+                <article className="timeline-item">
+                  <span className="timeline-dot" />
+
+                  <span className="timeline-date">2019 — 2022</span>
+
+                  <h3>Diploma, Mechanical Engineering</h3>
+
+                  <p>
+                    Vemuganti Manohar Rao Polytechnic, Warangal{" "}
+                    <span className="result-badge">CGPA 9.32 / 10</span>
+                  </p>
+                </article>
+              </div>
+
+              <div className="certifications">
+                <div>
+                  <span className="cert-kicker">CERTIFICATIONS</span>
+                  <h3>Building my foundation</h3>
+                </div>
+
+                <div className="cert-list">
+                  <span>
+                    Java Programming
+                    <i>GeeksforGeeks · 2025</i>
+                  </span>
+
+                  <span>
+                    Java Training
+                    <i>Besant Technologies · 2025</i>
+                  </span>
+
+                  <span>
+                    Full Stack Developer
+                    <i>GeeksforGeeks · 2025</i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </section>
         </main>
       </div>
     </>

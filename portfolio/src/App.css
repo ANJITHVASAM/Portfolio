@@ -468,3 +468,77 @@ h1 span,
   color: #8792ae;
   margin-top: 18px;
 }
+.timeline {
+  max-width: 790px;
+  margin-top: 35px;
+}
+.timeline-item {
+  position: relative;
+  padding: 0 0 32px 28px;
+  border-left: 1px solid rgba(155, 140, 255, 0.3);
+}
+.timeline-item:last-child {
+  border-left-color: transparent;
+  padding-bottom: 8px;
+}
+.timeline-dot {
+  position: absolute;
+  left: -5px;
+  top: 3px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 14px rgba(155, 140, 255, 0.5);
+}
+.timeline-date {
+  font-size: 9px;
+}
+.timeline-item h3 {
+  font-size: 16px;
+  margin: 10px 0 5px;
+}
+.timeline-item p {
+  margin: 0;
+}
+.result-badge {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 4px 7px;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  font-size: 9px;
+  color: var(--green);
+}
+.certifications {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  gap: 35px;
+  border-top: 1px solid var(--line);
+  margin-top: 34px;
+  padding-top: 28px;
+}
+.cert-kicker {
+  font-size: 9px;
+}
+.certifications h3 {
+  font-size: 17px;
+  margin: 9px 0;
+}
+.cert-list {
+  display: grid;
+  gap: 10px;
+}
+.cert-list span {
+  font-size: 11px;
+  color: var(--muted);
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.cert-list i {
+  font-style: normal;
+  color: #7f8aa7;
+}
