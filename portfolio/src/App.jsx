@@ -26,16 +26,28 @@ const projects = [
     description:
       "A full-stack assessment tool where learners can select a programming language and a difficulty level: Easy, Medium, or Hard.",
     tags: ["Full Stack", "Assessment", "Learning"],
-    repo: "https://github.com/ANJITHVASAM",
-    link: "https://student-quizapp.vercel.app/"
+    repo: "https://github.com/ANJITHVASAM/quizapp",
+    link: "https://student-quizapp.vercel.app/",
+    imageLink: "https://static.vecteezy.com/system/resources/thumbnails/032/184/743/small/quiz-logo-icon-symbol-flat-cartoon-bubble-speeches-with-question-and-check-mark-signs-as-competition-game-or-interview-logotype-poll-or-questionnaire-modern-creative-horizontal-vector.jpg",
   },
   {
     number: "02",
+    title: "Hostel Management System",
+    description:
+      "A web application for managing students record in hostel.",
+    tags: ["Full Stack", "Web Application"],
+    repo: "https://github.com/ANJITHVASAM/Hostel-Management",
+    link: "https://anjith-hms.vercel.app/",
+    imageLink: "https://wb.rentok.com/wp-content/uploads/2023/06/hostel-management-system.png",
+  },
+  {
+    number: "03",
     title: "E-Commerce Website",
     description:
-      "A web application for browsing, searching, and purchasing products online. Add the exact repository and live demo when ready.",
+      "A web application for browsing, searching, and purchasing products online.",
     tags: ["React", "Web Application", "E-Commerce"],
     repo: "https://github.com/ANJITHVASAM",
+    imageLink: "https://media.geeksforgeeks.org/wp-content/uploads/20240409180455/ecommerce-Website-Project.webp"
   },
 ];
 
@@ -286,56 +298,52 @@ function App() {
             </div>
 
             <div className="projects-grid">
-              {projects.map(function (project) {
-                return (
-                  <article className="project-card" key={project.number}>
-                    <div className="project-top">
-                      <span>{project.number} / PROJECT</span>
+            {projects.map(function (project) {
+              return (
+                <article className="project-card" key={project.number}>
+                  <div className="project-top">
+                    <span>{project.number} / PROJECT</span>
 
-                      <a href={project.repo} target="_blank" rel="noreferrer">
-                        ↗
-                      </a>
-                    </div>
-
-                    <div className="project-visual">
-
-                    </div>
-
-                    <h3>{project.title}</h3>
-
-                    <p>{project.description}</p>
-
-                    <div className="tags">
-                      {project.tags.map(function (tag) {
-                        return (
-                          <span className="tag" key={tag}>
-                            {tag}
-                          </span>
-                        );
-                      })}
-                    </div>
-
-                    {project.link ? <a
-                      className="text-link"
-                      href={project.link}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      View Website ↗
-                    </a> : ""}
-                    <br />
-                    <a
-                      className="text-link"
-                      href={project.repo}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      View GitHub profile ↗
+                    <a href={project.repo} target="_blank" rel="noreferrer">
+                      ↗
                     </a>
-                  </article>
-                );
-              })}
-            </div>
+                  </div>
+                  {project.imageLink && <img className="project-visual" width="100%" src={project.imageLink}/>}
+                  <h3>{project.title}</h3>
+
+                  <p>{project.description}</p>
+
+                  <div className="tags">
+                    {project.tags.map(function (tag) {
+                      return (
+                        <span className="tag" key={tag}>
+                          {tag}
+                        </span>
+                      );
+                    })}
+                  </div>
+
+                  {project.link && <a
+                    className="text-link"
+                    href={project.link}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    View Website ↗
+                  </a>}
+                  <br />
+                  <a
+                    className="text-link"
+                    href={project.repo}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    View GitHub profile ↗
+                  </a>
+                </article>
+              );
+            })}
+          </div>
 
             <p className="small-note">
               Update each project’s GitHub link to its specific repository and add

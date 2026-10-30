@@ -437,7 +437,6 @@ h1 span,
 .project-visual {
   height: 170px;
   margin: 19px 0;
-  background: linear-gradient(135deg, #202548, #132f43);
   border-radius: 10px;
   position: relative;
   display: grid;
